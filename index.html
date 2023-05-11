@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<body> 
+
+    <div class="container" >
+        <div class="row">
+                <div >
+                    <button id="btnSign-in" class="logged-out btn btn-secondary" >Log In</button>
+                    <button id="btnSign-up" class="logged-out btn btn-secondary">Sign Up</button>
+                    <button id="btnSign-out" class="logged-in btn btn-secondary " style="display: none;">Log Out</button>
+                </div>  
+                <!--Formulario Iniciar Sesion -->
+                <div class="col-6">          
+                    <div id="sign-in" class="card" style="margin-top: 10px; display: none;">
+                        <!-- none es para que inicialmente no nos muestre los input -->
+                        <div class="card-header">
+                            <h1 class="card-tittle">Inicio de sesion</h1>
+
+                        </div>
+                            <div class="card-body">
+                                    <input type="email" id="email-login"  class="form-control" placeholder="Email">
+                                    <br>
+                                    <input type="password" id="password-login" class="form-control" placeholder="Password">
+                                    <br>
+                                    <div style="text-align: center;">
+                                        <button id="btnLogin" class="btn btn-primary form-control" style="size: 2px;">Iniciar</button>
+                                    </div>
+                            </div>
+                    </div>
+                </div>       
+        </div>
+           <!--Formulario Registrar -->
+             <div class="row">
+                <div class="col-6">
+                    
+                    <div id="sign-up" class="card"  style="margin-top: 10px; display: none;">
+                            <!-- none es para que inicialmente no nos muestre los input -->
+                        <div class="card-header">
+                            <h1 class="card-tittle">Registrar</h1>   
+                        </div>
+                        <div class="card-body">
+                            <input type="email" id="email" class="form-control" placeholder="Email">
+                            <br>
+                            <input type="password" id="password" class="form-control" placeholder="Password">
+                            <br>
+                            <div style="text-align: center;">    
+                                <button class="btn btn-primary form-control" id="btnSend">Registrarse</button>
+                            </div>    
+                        </div>    
+                    </div> 
+                </div>
+            </div>
+    </div>
+
+    
+
+
+    <!--Formulario Productos  -->
+<div class="container" >
+        <div class="row">
+                <div class="col-12">
+                        <div  id="Products" style="margin-top: 10px; display: none; ">
+                        <div class="card"> 
+                                <div class="card-header" style="margin-top: 10px;" >
+                                    <h4 class="card-title" id = "welcome"></h4>  <!-- Div de mensaje que nos muestra el nombre -->       
+                                </div>
+                            <div class="card-body">
+                                <input  type="text" class="form-control " id="name" placeholder="Ingrese el nombre del producto">
+                                <br>
+                                <textarea id="description" class="form-control" placeholder="Ingrese la descripcion del producto"></textarea>
+                                <br>
+                                <button id="btnSave" class="btn btn-success" >Guardar</button>
+                            </div>    
+                        </div>       
+                            <div id="Container"> </div>   
+                        </div>  <!-- con este div almacenare las tareas o productos a guardar -->
+                             
+                </div>
+
+        </div>
+</div>
+    
+   
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="./JS/main.js" type="module"></script>
+</body>
+</html>
